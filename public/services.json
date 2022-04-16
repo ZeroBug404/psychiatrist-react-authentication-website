@@ -1,0 +1,20 @@
+[
+    {
+      "id": "625b13247ee48a550b32c885",
+      "picture": "./services/service1.jpg",
+      "name": "Terrell Jacobson",
+      "price": "$200"
+    },
+    {
+      "id": "625b132488f66dcdca844f2a",
+      "picture": "./services/service2.jpg",
+      "name": "Hunt Berg",
+      "price": "$400"
+    },
+    {
+      "id": "625b132463e40f8a851f833d",
+      "picture": "../services/service3.jpg",
+      "name": "Brewer Dorsey",
+      "price": "$800"
+    }
+]
