@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useRef } from "react";
 import { Button, Form } from "react-bootstrap";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
@@ -52,7 +53,7 @@ const Login = () => {
         <Button className="btn btn-success w-75 text-center login-btn mt-3" variant="primary" type="submit">
           Login
         </Button>
-        <p className="text-center fw-bold mt-3">New here? <Link to="/register" className='text-danger pe-auto text-decoration-none' onClick={navigateLogin}>Please Register</Link></p>
+        <p className="text-center fw-bold mt-3">New here? <Link to="/register" className='text-warning pe-auto text-decoration-none' onClick={navigateLogin}>Please Register</Link></p>
       </Form>
     </div>
   );

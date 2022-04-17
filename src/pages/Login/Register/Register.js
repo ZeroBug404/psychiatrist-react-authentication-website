@@ -4,6 +4,7 @@ import { Button, Form } from "react-bootstrap";
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from "react-router-dom";
 import auth from '../../../firebase.init';
+import Social from "../Social/Social";
 
 const Register = () => {
 
@@ -31,7 +32,7 @@ const Register = () => {
     }
 
   return (
-    <div style={{ height: "67vh" }} className="container w-50 mx-auto mt-5">
+    <div className="container w-50 mx-auto mt-5">
       <h2 className="text-center text-success mb-3">Please Register</h2>
       <Form onSubmit={handleRegister}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -63,9 +64,10 @@ const Register = () => {
           Register
         </Button>
         <p className="text-center fw-bold mt-3">
-          Already Registered? <Link to="/login" className='text-danger pe-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link>
+          Already Registered? <Link to="/login" className='text-warning pe-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link>
         </p>
       </Form>
+      <Social></Social>
     </div>
   );
 };
