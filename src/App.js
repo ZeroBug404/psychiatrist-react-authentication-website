@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <Helmet>
                 <meta charSet="utf-8" />
-                <title>Psychiatrists</title>
+                <title>Dr Jane - Pychiatrists</title>
       </Helmet>
 
       <Header></Header>
