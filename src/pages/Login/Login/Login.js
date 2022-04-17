@@ -2,13 +2,17 @@
 import React, { useRef } from "react";
 import { Button, Form } from "react-bootstrap";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
+import Social from "../Social/Social";
 import './Login.css'
 
 const Login = () => {
     const emailRef = useRef('');;
     const passwordRef = useRef('');
+    const location = useLocation();
+
+    const from = location.state?.from?.pathname || "/";
  
     const [
         signInWithEmailAndPassword,
@@ -26,9 +30,9 @@ const Login = () => {
 
         signInWithEmailAndPassword(email, password);
     }
-
+    
     if (user) {
-        navigate('/home')
+        navigate(from, { replace: true });
     }
 
     const navigateLogin = () => {
@@ -55,6 +59,7 @@ const Login = () => {
         </Button>
         <p className="text-center fw-bold mt-3">New here? <Link to="/register" className='text-warning pe-auto text-decoration-none' onClick={navigateLogin}>Please Register</Link></p>
       </Form>
+      <Social></Social>
     </div>
   );
 };

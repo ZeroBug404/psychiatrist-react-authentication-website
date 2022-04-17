@@ -12,6 +12,8 @@
 }
 .checkOut-btn{
     padding: 10px;
+    text-decoration: none;
+    display: block;
 }
 .checkOut-btn{
     border: 1px solid rgb(202, 202, 214);
