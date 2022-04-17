@@ -13,7 +13,7 @@ const Services = () => {
     },[])
 
     return (
-        <div className='container mb-5'>
+        <div id='services' className='container mb-5'>
             <h2 style={{color: '#20471f'}} className='text-center m-5'>Popular Therapy Services</h2>
             <div className='services'>
             {

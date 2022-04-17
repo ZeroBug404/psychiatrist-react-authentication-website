@@ -1,0 +1,18 @@
+.notFound{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.notFound h1{
+    color: green;
+    font-weight: bold;
+    font-size: 100px;
+}
+
+.notFound h2{
+    color: rgb(10, 37, 10);
+    font-weight: bold;
+    font-size: 50px;
+}
