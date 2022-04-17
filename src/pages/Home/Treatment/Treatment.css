@@ -25,4 +25,7 @@
     .treatment{
         flex-direction: column;
     }
+    .brain-img img{
+        width: 100%;
+    }
 }

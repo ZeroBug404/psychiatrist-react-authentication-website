@@ -12,7 +12,7 @@ const Treatment = () => {
                     <li><span style={{color: '#3aae36'}}>.02</span> Anti-anxiety Treatments</li>
                     <li><span style={{color: '#3aae36'}}>.03</span> Antipsychotic Medications</li>
                 </div>
-                <div>
+                <div className='brain-img'>
                     <img src={brain} alt="" />
                 </div>
                 <div className='right'>

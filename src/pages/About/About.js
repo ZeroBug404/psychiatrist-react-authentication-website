@@ -11,7 +11,7 @@ const About = () => {
           <img width={"80%"} src={aboutME} alt="" />
         </div>
         <div className="w-50 aboutInfo-text">
-            <h2>My Mission</h2>
+            <h2>Hi I'm Shimu & My Mission - </h2>
           <p>
             I want to be a professional web developer and want to create my own
             IT firm and be an successful entrepreneur. 

@@ -14,7 +14,7 @@ const Banner = () => {
           alt="First slide"
         />
         <Carousel.Caption className="text-dark">
-          <h3 style={{fontSize: '45px'}}>There is Always A Better Way</h3>
+          <h3 style={{fontSize: '32px'}}>There is Always A Better Way</h3>
           
         </Carousel.Caption>
       </Carousel.Item>
@@ -26,7 +26,7 @@ const Banner = () => {
         />
 
         <Carousel.Caption className="text-dark">
-          <h3 style={{fontSize: '45px'}}>Get Your Issue Sorted</h3>
+          <h3 style={{fontSize: '40px'}}>Get Your Issue Sorted</h3>
           
         </Carousel.Caption>
       </Carousel.Item>
@@ -38,7 +38,7 @@ const Banner = () => {
         />
 
         <Carousel.Caption >
-          <h3 style={{fontSize: '45px'}} className="text-dark">Award Winning Psychiatrist </h3>
+          <h3 style={{fontSize: '32px'}} className="text-dark">Award Winning Psychiatrist </h3>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
