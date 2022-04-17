@@ -1,10 +1,18 @@
 /* eslint-disable no-unused-vars */
+import { signOut } from "firebase/auth";
 import React from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
+import auth from "../../../firebase.init";
 import logo from '../../../images/white-logo.png';
 
 const Header = () => {
+  const [user] = useAuthState(auth);
+
+  const logout = () => {
+    signOut(auth);
+  };
   return (
     <Navbar sticky="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
@@ -31,10 +39,15 @@ const Header = () => {
             </NavDropdown> */}
           </Nav>
           <Nav>
-            
-            <Nav.Link className="btn btn-info text-dark" href="#memes">
+            {
+              user ?
+              <button className="btn btn-info text-dark" onClick={logout}>Sign Out</button>
+              :
+              <Nav.Link className="btn btn-info text-dark" as={Link} to="/login">
               Login
             </Nav.Link>
+            }
+            
           </Nav>
         </Navbar.Collapse>
       </Container>
