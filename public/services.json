@@ -1,20 +1,23 @@
 [
-    {
-      "id": "625b13247ee48a550b32c885",
-      "picture": "./services/service1.jpg",
-      "name": "Terrell Jacobson",
-      "price": "$200"
-    },
-    {
-      "id": "625b132488f66dcdca844f2a",
-      "picture": "./services/service2.jpg",
-      "name": "Hunt Berg",
-      "price": "$400"
-    },
-    {
-      "id": "625b132463e40f8a851f833d",
-      "picture": "../services/service3.jpg",
-      "name": "Brewer Dorsey",
-      "price": "$800"
-    }
+  {
+    "id": "625b13247ee48a550b32c885",
+    "picture": "./services/service1.jpg",
+    "name": "STRESS AND WORRY",
+    "text": "People under stress experience mental and physical symptoms, such as irritability, anger, and difficulty sleeping.",
+    "price": "$200"
+  },
+  {
+    "id": "625b132488f66dcdca844f2a",
+    "picture": "./services/service2.jpg",
+    "name": "FAMILY DIFFICULTIES",
+    "text": "Family life can be a place of refuge and security but for some it is a source of pain and disappointment.",
+    "price": "$400"
+  },
+  {
+    "id": "625b132463e40f8a851f833d",
+    "picture": "../services/service3.jpg",
+    "name": "GRIEF AND LOSS",
+    "text": "It might be the loss of a loved one, relationship, pregnancy, pet, job or way of life. Other experiences of loss.",
+    "price": "$800"
+  }
 ]

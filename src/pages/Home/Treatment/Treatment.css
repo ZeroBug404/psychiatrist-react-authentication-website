@@ -1,0 +1,22 @@
+.treatment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    color: #20471f;
+}
+.left{
+    list-style: none;
+}
+.left li{
+    margin: 50px 0px;
+    font-size: 20px;
+}
+.right{
+    list-style: none;
+}
+.right li{
+    margin: 50px 0px;
+    font-size: 20px;
+}
