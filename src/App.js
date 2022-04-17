@@ -2,6 +2,7 @@ import Helmet from 'react-helmet';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './pages/About/About';
+import Blog from './pages/Blog/Blog';
 import CheckOut from './pages/Checkout/CheckOut/CheckOut';
 import Home from './pages/Home/Home/Home';
 import Services from './pages/Home/Services/Services/Services';
@@ -26,6 +27,7 @@ function App() {
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/services' element={<Services></Services>}></Route>
+        <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='checkout' element={
           <RequireAuth>
             <CheckOut></CheckOut>
